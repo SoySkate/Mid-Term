@@ -7,7 +7,7 @@ async function dataJson() {
       let dataRecieve = "";
       argumento2.forEach((eachPost) => {
         dataRecieve += `
-              <div class="mx-4 pb-10 mb-8 bg-white">
+              <div class="mx-4 pb-20 mb-8 bg-white">
               <img class="object-fill h-[60%] w-full mb-10" src="/projects/${
                 eachPost.id
               }.jpeg" alt="abstract img">
