@@ -4,9 +4,153 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="index.js"></script>
     <title>Document</title>
   </head>
-  <body>
-    goood
+  <body class="font-['Roboto, sants-serif'] bg-[#F0F8FF]">
+    <header class="flex-wrap mx-[10%]">
+      <nav class="flex justify-between mt-10 lg:py-10 mx-5 items-center">
+        <div>
+          <a href="./index.html"
+            ><img
+              class="lg:h-32 lg:w-32 h-40 w-40 hover:cursor-pointer"
+              href=""
+              src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg"
+              alt="Logo Circle"
+          /></a>
+        </div>
+        <div class="hidden lg:block NavClass">
+          <a
+            href="./index.html"
+            id="navHome"
+            class="mx-4 text-gray-400 font-semibold text-2xl hover:text-blue-800"
+            >Home</a
+          >
+          <a
+            href="#"
+            id="navProjects"
+            class="mx-4 text-gray-400 font-semibold text-2xl hover:text-blue-800"
+            >Projects</a
+          >
+          <a
+            href="#"
+            id="navServices"
+            class="mx-4 text-gray-400 font-semibold text-2xl hover:text-blue-800"
+            >Services</a
+          >
+        </div>
+        <button
+          onclick="window.location.href='./contactUs.html'"
+          class="NavClass invisible lg:visible text-white bg-blue-700 w-40 h-14 text-2xl rounded-md hover:bg-blue- focus:outline-none focus:ring focus:ring-cyan-500 items-center hover:bg-blue-900"
+        >
+          Contact Us
+        </button>
+
+        <img
+          id="cangreBurguerNav"
+          class="h-14 w-14 rounded-full block lg:hidden"
+          src="https://i.pinimg.com/originals/2d/b3/c5/2db3c523682d32a78d48ecf28250effb.png"
+          alt="uf que hambre"
+        />
+      </nav>
+    </header>
+    <ul id="navMenu" class="bg-gray-400 w-screen hidden py-5">
+      <li class="my-2">
+        <a
+          href="./index.html"
+          class="nav-link mx-4 text-white font-semibold text-2xl hover:text-blue-800"
+          >Home</a
+        >
+      </li>
+      <li class="my-2">
+        <a
+          href="./dashcoin.html"
+          class="nav-link mx-4 text-white font-semibold text-2xl hover:text-blue-800"
+          >Projects</a
+        >
+      </li>
+      <li class="my-2">
+        <a
+          href="#"
+          class="nav-link mx-4 text-white font-semibold text-2xl hover:text-blue-800"
+          >Services</a
+        >
+      </li>
+    </ul>
+    <h1 class="mx-[10%] text-[#292e47] text-7xl font-bold mt-10">Contact Us</h1>
+    <section class="mx-[10%]">
+      <form id="my-form" class="grid grid-cols-1 grid-rows-2 my-20">
+        <h2 class="pt-1 pt-4 4 text-2xl text-[#6b708d]">Full Name *</h2>
+        <input
+          class="py-6 placeholder:text-[#6b708d] placeholder:px-4 placeholder: text-xl placeholder:text-[#6b708d] bg-gray-200"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your full name"
+        />
+        <div class="grid grid-cols-2 grid-rows-1">
+          <div>
+            <h2 class="pb-2 pt-4 text-2xl text-[#6b708d]">Email</h2>
+            <input
+              class="py-6 w-full placeholder:text-xl placeholder:px-4 placeholder:text-[#6b708d] bg-gray-200"
+              type="text"
+              name="name"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="ml-[4%]">
+            <h2 class="pb-2 pt-4 text-2xl text-[#6b708d]">Phone</h2>
+            <input
+              class="py-6 w-full placeholder:ml-6 placeholder:px-4 placeholder:text-xl placeholder:text-[#6b708d] bg-gray-200"
+              type="text"
+              name="name"
+              id="phone"
+              placeholder="Enter your phone"
+            />
+          </div>
+        </div>
+        <h2 class="pb-2 pt-4 text-2xl text-[#6b708d]">Message *</h2>
+        <input
+          class="py-20 placeholder: text-xl placeholder:px-4 placeholder:text-[#6b708d] bg-gray-200"
+          type="text"
+          name="name"
+          id="message"
+          placeholder="Write your message here..."
+        />
+        <button
+          type="submit"
+          class="text-white flex justify-center mt-10 bg-blue-700 w-full h-20 text-2xl rounded-md hover:bg-blue- focus:outline-none focus:ring focus:ring-cyan-500 items-center hover:bg-blue-900"
+        >
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <div id="message3"></div>
+
+    <footer class="flex mx-[10%] my-36 justify-between">
+      <div>
+        <img
+          class="mb-4 h-32 w-32"
+          src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg"
+          alt="Logo Circle"
+        />
+        <p class="text-2xl font-normal text-[#6b708d]">
+          2972 Westheimer Rd. Santa Ana,<br />
+          Illinois 85486
+        </p>
+      </div>
+      <div
+        class="grid text-2xl text-blue-800 font-normal grid-cols-4 items-center grid-rows-2"
+      >
+        <a href="#">Team</a><a href="#">Services</a><a href="#">About Us</a
+        ><br /><a href="#">Press</a><a href="#">Projects</a
+        ><a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="cangreBurguer.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

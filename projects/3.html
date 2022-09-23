@@ -10,44 +10,80 @@
   </head>
   <body class="font-['Roboto, sants-serif'] bg-[#F0F8FF]">
     <header class="flex-wrap mx-[10%]">
-      <nav class="flex justify-between mt-10 py-10 pt-10 mx-5 items-center">
+      <nav class="flex justify-between mt-10 py-0 lg:py-10 mx-5 items-center">
         <div>
-          <img
-            href="./index.html"
-            class="h-68 w-68 hover:cursor-pointer"
-            src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg"
-            alt="Logo Circle"
-          />
+          <a href="../index.html"
+            ><img
+              class="lg:h-32 lg:w-32 h-40 w-40 hover:cursor-pointer"
+              href=""
+              src="https://uploads-ssl.webflow.com/61f7ff5634c23c5bef9d2e54/61f800b7cb56a839fd8ed026_Circle.svg"
+              alt="Logo Circle"
+          /></a>
         </div>
-        <div>
+        <div class="hidden lg:block NavClass">
           <a
-            href="./index.html"
+            href="../index.html"
+            id="navHome"
             class="mx-4 text-gray-400 font-semibold text-2xl hover:text-blue-800"
             >Home</a
           >
           <a
             href="#"
+            id="navProjects"
             class="mx-4 text-gray-400 font-semibold text-2xl hover:text-blue-800"
             >Projects</a
           >
           <a
             href="#"
+            id="navServices"
             class="mx-4 text-gray-400 font-semibold text-2xl hover:text-blue-800"
             >Services</a
           >
         </div>
         <button
-          onclick="window.location.href='./contactUs.html'"
-          class="text-white bg-blue-700 w-40 h-14 text-2xl rounded-md hover:bg-blue- focus:outline-none focus:ring focus:ring-cyan-500 items-center hover:bg-blue-900"
+          onclick="window.location.href='../contactUs.html'"
+          class="NavClass invisible lg:visible text-white bg-blue-700 w-40 h-14 text-2xl rounded-md hover:bg-blue- focus:outline-none focus:ring focus:ring-cyan-500 items-center hover:bg-blue-900"
         >
           Contact Us
         </button>
+
+        <img
+          id="cangreBurguerNav"
+          class="h-14 w-14 rounded-full block lg:hidden"
+          src="https://i.pinimg.com/originals/2d/b3/c5/2db3c523682d32a78d48ecf28250effb.png"
+          alt="uf que hambre"
+        />
       </nav>
     </header>
+    <ul id="navMenu" class="bg-gray-400 w-screen hidden py-5">
+      <li class="my-2">
+        <a
+          href="./index.html"
+          class="nav-link mx-4 text-white font-semibold text-2xl hover:text-blue-800"
+          >Home</a
+        >
+      </li>
+      <li class="my-2">
+        <a
+          href="./dashcoin.html"
+          class="nav-link mx-4 text-white font-semibold text-2xl hover:text-blue-800"
+          >Projects</a
+        >
+      </li>
+      <li class="my-2">
+        <a
+          href="#"
+          class="nav-link mx-4 text-white font-semibold text-2xl hover:text-blue-800"
+          >Services</a
+        >
+      </li>
+    </ul>
 
-    <section class="mx-[10%] mt-60 mb-20">
+    <div id="fetchHtml"></div>
+
+    <section class="mx-[10%] mt-20 mb-20">
       <h1 class="text-6xl font-bold text-[#292e47] my-20">Other Projects</h1>
-      <div class="grid grid-cols-3 gap-2 mb-">
+      <div id="recentP1" class="text-align lg:grid grid-cols-3 gap-4-">
         <div class="">
           <img
             class="object-fill h-[60%] w-[90%] mb-10"
@@ -59,9 +95,7 @@
             <p class="mb-8 text-2xl text-[#292e47]">
               UI Design & App Development
             </p>
-            <a
-              href="./simplify.html"
-              class="text-2xl text-blue-700 font-semibold"
+            <a href="./1.html" class="text-2xl text-blue-700 font-semibold"
               >Learn More</a
             >
           </div>
@@ -75,9 +109,7 @@
           <div class="ml-8">
             <h2 class="my-8 text-4xl text-[#292e47] font-semibold">Dashcoin</h2>
             <p class="mb-8 text-2xl text-[#292e47]">Web Development</p>
-            <a
-              href="./dashcoin.html"
-              class="text-2xl text-blue-700 font-semibold"
+            <a href="./2.html" class="text-2xl text-blue-700 font-semibold"
               >Learn More</a
             >
           </div>
@@ -93,9 +125,7 @@
               Vectorify
             </h2>
             <p class="mb-8 text-2xl text-[#292e47]">User Experience Design</p>
-            <a
-              href="./vectorify.html"
-              class="text-2xl text-blue-700 font-semibold"
+            <a href="./3.html" class="text-2xl text-blue-700 font-semibold"
               >Learn More</a
             >
           </div>
@@ -109,7 +139,7 @@
       <h3 class="mb-8 text-2xl text-[#6b708d]">Let us help you!</h3>
       <form action="" class="pb-36">
         <input
-          class="py-10 px-36 placeholder: text-2xl placeholder:text-black type: text-3xl"
+          class="placeholder:flex placeholder:justify-between py-10 sm:px-36 placeholder:text-2xl placeholder:text-black type: sm:text-3xl"
           type="text"
           name="name"
           placeholder="📧Enter your email"
@@ -141,5 +171,7 @@
         ><a href="#">Privacy Policy</a>
       </div>
     </footer>
+    <script src="cangreBurguer.js"></script>
+    <script src="pages3.js"></script>
   </body>
 </html>
